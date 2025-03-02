@@ -1,0 +1,23 @@
+GET http://localhost:8082
+###
+GET http://localhost:8082/currencies
+###
+GET http://localhost:8082/currencies/inr
+###
+GET http://localhost:8082/currencies?min_value=0.01 
+###
+GET http://localhost:8082/users
+###
+GET http://localhost:8082/users/06750d9e-84d3-4cd1-8f89-1710213d2576
+###
+GET http://localhost:8082/users/5
+###
+GET http://localhost:8082/users/search?gender=male
+###
+GET http://localhost:8082/users/search?age=49
+###
+GET http://localhost:8082/users/search?gender=female&age=49
+###
+GET http://localhost:8082/users/search
+###
+GET http://localhost:8082/users/search?age=-5
