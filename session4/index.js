@@ -5,7 +5,9 @@ require("dotenv").config();
 
 const currenciesRouter = require("./routes/currencies.routes");
 const userRouter = require("./routes/users.routes");
+const verifyAuth = require("./middleware/verifyAuth");
 
+app.use(verifyAuth);
 app.get("/", (req, res) => {
     res.send(`<h1 style="color:red">Currency Database</h1>`);
 })
