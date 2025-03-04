@@ -1,0 +1,51 @@
+GET http://localhost:8082
+###
+GET http://localhost:8082/currencies
+###
+GET http://localhost:8082/currencies/inr
+###
+GET http://localhost:8082/currencies?min_value=0.01 
+###
+GET http://localhost:8082/users
+Authorization: LetMeIn
+###
+GET http://localhost:8082/users/06750d9e-84d3-4cd1-8f89-1710213d2576
+###
+GET http://localhost:8082/users/5
+###
+GET http://localhost:8082/users/search?gender=male
+###
+GET http://localhost:8082/users/search?age=49
+###
+GET http://localhost:8082/users/search?gender=female&age=49
+###Authorization: LetMeIn
+GET http://localhost:8082/users/search
+Authorization: LetMeIn
+###
+GET http://localhost:8082/users/search?age=-5
+###
+GET http://localhost:8082/users/search?age=male
+###
+POST http://localhost:8082/blogs/new
+Content-Type: application/json
+
+{
+    "title": "Japan",
+    "content": "Japan seems like a great place to visit.I would love to go there someday.",
+    "author": ["John Doe","Jane Doe"],
+    "publishedAt": null
+}
+###
+GET http://localhost:8082/blogs
+###
+POST http://localhost:8082/blogs/new
+Content-Type: application/json
+
+{
+    "title": "Australia",
+    "content": "Australia is a country and continent surrounded by the Indian and Pacifi oceans.Its major cities - Sydney, Brisbane, Melbourne, Perth, Adelaide - are coastal. Its capital , Canberra, is inland. The country is known for its Sydney Opera House, the Great Barrier Reef, a vast interior desert wilderness called the Outback, and unique animal species like kangaroos and duck-billed platypuses.",
+    "author": ["James","Giovanni"],
+    "publishedAt": null
+}
+###
+GET http://localhost:8082/blogs/67c7395adf50e93bced81eb5
