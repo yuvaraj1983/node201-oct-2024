@@ -48,4 +48,39 @@ Content-Type: application/json
     "publishedAt": null
 }
 ###
-GET http://localhost:8082/blogs/67c7395adf50e93bced81eb5
+POST http://localhost:8082/blogs/new
+Content-Type: application/json
+
+{
+    "title": "India"
+   
+}
+###
+POST http://localhost:8082/blogs/new
+Content-Type: application/json
+
+{
+    "content": "This is a blog post"
+   
+}
+###
+GET http://localhost:8082/blogs/67c8631bb507e2722155d480
+###
+PATCH  http://localhost:8082/blogs/67c8631bb507e2722155d480
+Content-Type: application/json
+
+{
+    "content": "Australia is the land of Kangaroos",
+    "author": ["Ponting","Lee"]
+}
+###
+PATCH  http://localhost:8082/blogs/67c8631bb507e2722155d480
+Content-Type: application/json
+
+{
+    "content": "Australia vs India",
+    "author": ["Waugh","Starc"]
+}
+###
+DELETE http://localhost:8082/blogs/67c88d70f0391e7816d7c8c0
+
