@@ -52,7 +52,7 @@ POST http://localhost:8082/blogs/new
 Content-Type: application/json
 
 {
-    "title": "India"
+    "title": "Pakistan"
    
 }
 ###
@@ -64,7 +64,7 @@ Content-Type: application/json
    
 }
 ###
-GET http://localhost:8082/blogs/67c8631bb507e2722155d480
+GET http://localhost:8082/blogs/67c86a0cba1de4a5e293093
 ###
 PATCH  http://localhost:8082/blogs/67c8631bb507e2722155d480
 Content-Type: application/json
@@ -82,5 +82,5 @@ Content-Type: application/json
     "author": ["Waugh","Starc"]
 }
 ###
-DELETE http://localhost:8082/blogs/67c88d70f0391e7816d7c8c0
+DELETE http://localhost:8082/blogs/67c89885fbb7dddee27f60c2
 
